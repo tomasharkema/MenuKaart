@@ -1,10 +1,10 @@
-package nl.tomasharkema.checkout;
+package nl.tomasharkema.MenuKaart.checkout;
 
 import junit.framework.TestCase;
-import nl.tomasharkema.product.products.drinks.Cola;
-import nl.tomasharkema.product.products.drinks.Fanta;
-import nl.tomasharkema.product.products.food.Pizza;
-import nl.tomasharkema.product.products.food.Spaghetti;
+import nl.tomasharkema.MenuKaart.product.products.drinks.Cola;
+import nl.tomasharkema.MenuKaart.product.products.drinks.Fanta;
+import nl.tomasharkema.MenuKaart.product.products.food.Pizza;
+import nl.tomasharkema.MenuKaart.product.products.food.Spaghetti;
 import org.hamcrest.Matcher;
 import org.junit.Test;
 

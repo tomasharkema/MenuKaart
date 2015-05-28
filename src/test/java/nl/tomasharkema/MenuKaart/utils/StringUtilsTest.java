@@ -1,4 +1,4 @@
-package nl.tomasharkema.utils;
+package nl.tomasharkema.MenuKaart.utils;
 
 import junit.framework.TestCase;
 import org.junit.Test;
