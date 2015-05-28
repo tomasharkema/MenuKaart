@@ -11,7 +11,6 @@ import static org.junit.Assert.assertThat;
  */
 public class StringUtilsTest extends TestCase {
 
-    @Test
     public void testFormatPrice() throws Exception {
         assertThat("100 cents is € 1,00", StringUtils.formatPrice(1.00), is("€ 1,00"));
         assertThat("199 cents is € 1,99", StringUtils.formatPrice(1.99), is("€ 1,99"));

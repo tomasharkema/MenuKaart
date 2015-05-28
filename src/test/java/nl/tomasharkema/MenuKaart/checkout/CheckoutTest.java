@@ -1,6 +1,5 @@
 package nl.tomasharkema.MenuKaart.checkout;
 
-import junit.framework.TestCase;
 import nl.tomasharkema.MenuKaart.product.products.drinks.Cola;
 import nl.tomasharkema.MenuKaart.product.products.drinks.Fanta;
 import nl.tomasharkema.MenuKaart.product.products.food.Pizza;
@@ -26,6 +25,8 @@ public class CheckoutTest {
 
         // remove testfile
         final File file = new File(testFileName);
+
+        //noinspection ResultOfMethodCallIgnored
         file.delete();
     }
 

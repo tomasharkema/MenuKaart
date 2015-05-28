@@ -6,8 +6,6 @@
 *.dex
  
 # Java class files
-*.class
- 
 # generated files
 bin/
 gen/
@@ -32,6 +30,5 @@ proguard/
 .gradletasknamecache
 .gradle/
 build/
-bin/
 
 bill.txt
