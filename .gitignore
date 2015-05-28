@@ -29,3 +29,5 @@ proguard/
 #Gradle
 .gradletasknamecache .gradle/ build/
 bin/
+
+bill.txt
