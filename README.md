@@ -1,6 +1,8 @@
 # MenuKaart
 Little java homework assignment
 
+[![Build Status](https://travis-ci.org/tomasharkema/MenuKaart.svg?branch=master)](https://travis-ci.org/tomasharkema/MenuKaart)
+
 -------
 This is a Gradle generated project.
 
