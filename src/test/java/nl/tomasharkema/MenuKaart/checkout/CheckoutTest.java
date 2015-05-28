@@ -6,6 +6,7 @@ import nl.tomasharkema.MenuKaart.product.products.drinks.Fanta;
 import nl.tomasharkema.MenuKaart.product.products.food.Pizza;
 import nl.tomasharkema.MenuKaart.product.products.food.Spaghetti;
 import org.hamcrest.Matcher;
+import org.junit.After;
 import org.junit.Test;
 
 import java.io.File;
@@ -16,13 +17,12 @@ import static org.hamcrest.core.Is.is;
 /**
  * Created by tomas on 28-05-15.
  */
-public class CheckoutTest extends TestCase {
+public class CheckoutTest {
 
-    private static String testFileName = "testFile.txt";
+    private final static String testFileName = "testFile.txt";
 
-    @Override
+    @After
     public void tearDown() throws Exception {
-        super.tearDown();
 
         // remove testfile
         final File file = new File(testFileName);
