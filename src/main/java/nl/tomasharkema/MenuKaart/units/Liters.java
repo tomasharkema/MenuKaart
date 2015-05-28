@@ -1,4 +1,4 @@
-package nl.tomasharkema.units;
+package nl.tomasharkema.MenuKaart.units;
 
 /**
  * Created by tomas on 28-05-15.

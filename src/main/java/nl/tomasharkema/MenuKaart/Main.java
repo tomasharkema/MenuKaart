@@ -1,9 +1,9 @@
-package nl.tomasharkema;
+package nl.tomasharkema.MenuKaart;
 
-import nl.tomasharkema.checkout.Checkout;
-import nl.tomasharkema.product.products.drinks.Cola;
-import nl.tomasharkema.product.products.food.Pizza;
-import nl.tomasharkema.product.products.food.Spaghetti;
+import nl.tomasharkema.MenuKaart.checkout.Checkout;
+import nl.tomasharkema.MenuKaart.product.products.drinks.Cola;
+import nl.tomasharkema.MenuKaart.product.products.food.Pizza;
+import nl.tomasharkema.MenuKaart.product.products.food.Spaghetti;
 
 import java.io.IOException;
 

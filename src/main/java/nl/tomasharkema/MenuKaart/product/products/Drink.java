@@ -1,8 +1,8 @@
-package nl.tomasharkema.product.products;
+package nl.tomasharkema.MenuKaart.product.products;
 
-import nl.tomasharkema.product.Product;
-import nl.tomasharkema.units.Liters;
-import nl.tomasharkema.units.Unit;
+
+import nl.tomasharkema.MenuKaart.product.Product;
+import nl.tomasharkema.MenuKaart.units.Liters;
 
 /**
  * Created by tomas on 28-05-15.

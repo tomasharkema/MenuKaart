@@ -1,8 +1,8 @@
-package nl.tomasharkema.product.products.food;
+package nl.tomasharkema.MenuKaart.product.products.food;
 
-import nl.tomasharkema.product.Product;
-import nl.tomasharkema.units.Grams;
-import nl.tomasharkema.units.Unit;
+
+import nl.tomasharkema.MenuKaart.product.Product;
+import nl.tomasharkema.MenuKaart.units.Grams;
 
 /**
  * Created by tomas on 28-05-15.

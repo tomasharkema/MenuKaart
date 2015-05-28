@@ -1,8 +1,8 @@
-package nl.tomasharkema.checkout;
+package nl.tomasharkema.MenuKaart.checkout;
 
-import nl.tomasharkema.product.Printable;
-import nl.tomasharkema.product.Product;
-import nl.tomasharkema.utils.StringUtils;
+import nl.tomasharkema.MenuKaart.product.Printable;
+import nl.tomasharkema.MenuKaart.product.Product;
+import nl.tomasharkema.MenuKaart.utils.StringUtils;
 
 import java.io.*;
 import java.util.ArrayList;

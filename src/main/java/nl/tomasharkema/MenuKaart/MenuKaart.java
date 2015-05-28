@@ -1,4 +1,4 @@
-package nl.tomasharkema;
+package nl.tomasharkema.MenuKaart;
 
 import java.util.Locale;
 
