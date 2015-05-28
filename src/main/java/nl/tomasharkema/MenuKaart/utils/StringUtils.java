@@ -10,7 +10,7 @@ import java.text.NumberFormat;
 public class StringUtils {
 
     /**
-     * Formats the given price integer to a more human readable string. Conviently wraps the NumberFormat class.
+     * Formats the given price integer to a more human readable string. Conveniently wraps the NumberFormat class.
      * @param       price in any unit
      * @return      the more human readable string.
      */

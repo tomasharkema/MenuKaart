@@ -12,7 +12,7 @@ public abstract class Product implements Printable {
     /**
      * The name of the product
      */
-    public final String name;
+    private final String name;
 
     /**
      * The price of the product, in cents, per unit.
@@ -22,7 +22,7 @@ public abstract class Product implements Printable {
     /**
      * The type unit this product comes in.
      */
-    public final Unit unit;
+    private final Unit unit;
 
     /**
      * The amount of units of the product. In baseunits.
@@ -58,7 +58,7 @@ public abstract class Product implements Printable {
      * @param units     Amount of units of product
      * @param calorie   Amount of calories per unit.
      */
-    public Product(String name, double cost, Unit unit, double units, int calorie) {
+    protected Product(String name, double cost, Unit unit, double units, int calorie) {
         this.name = name;
         this.cost = cost;
         this.unit = unit;

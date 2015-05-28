@@ -7,7 +7,7 @@ import nl.tomasharkema.MenuKaart.product.products.food.Spaghetti;
 
 import java.io.IOException;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) {
 
@@ -42,7 +42,7 @@ public class Main {
             checkout.writeBillToFile("bill.txt");
             System.out.println("Bill written to file!");
         } catch (IOException ex) {
-            System.err.println(ex);
+            ex.printStackTrace();
         }
 
         System.out.println("Read bill from file");
@@ -50,7 +50,7 @@ public class Main {
             String billString = checkout.readBillFromFile("bill.txt");
             System.out.println("Got a bill for ya!\n\n" + billString);
         } catch (IOException ex) {
-            System.err.println(ex);
+            ex.printStackTrace();
         }
     }
 }

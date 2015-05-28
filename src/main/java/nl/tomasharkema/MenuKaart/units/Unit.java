@@ -5,10 +5,10 @@ package nl.tomasharkema.MenuKaart.units;
  */
 public abstract class Unit {
 
-    public final String name;
+    private final String name;
     public final String abbriviation;
 
-    public Unit(String name, String abbriviation) {
+    Unit(String name, String abbriviation) {
         this.name = name;
         this.abbriviation = abbriviation;
     }

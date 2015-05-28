@@ -10,6 +10,6 @@ public class MenuKaart {
     /**
      * Set the used locale for the global application
      */
-    public static Locale standardLocale = new Locale("nl", "NL");
+    public final static Locale standardLocale = new Locale("nl", "NL");
 
 }

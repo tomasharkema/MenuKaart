@@ -19,7 +19,7 @@ public class Checkout {
     private final String beginMessage;
     private final String endMessage;
 
-    public Checkout(Product[] listOfProducts, String beginMessage, String endMessage) {
+    private Checkout(Product[] listOfProducts, String beginMessage, String endMessage) {
         this.listOfProducts = listOfProducts;
         this.beginMessage = beginMessage;
         this.endMessage = endMessage;
@@ -48,22 +48,28 @@ public class Checkout {
 
         int width = 0;
 
-        bill.append(beginMessage + "\n\n");
+        bill.append(beginMessage);
+        bill.append("\n\n");
 
         for (Printable p : listOfProducts) {
             final String productString = p.print();
-            bill.append(productString + "\n");
+            bill.append(productString);
+            bill.append("\n");
 
             int stringWidth = productString.length();
 
             if (stringWidth > width) width = stringWidth;
         }
 
-        bill.append(StringUtils.repeatChar('-', width) + "\n\n");
+        bill.append(StringUtils.repeatChar('-', width));
+        bill.append("\n\n");
 
-        bill.append("Total: " + StringUtils.formatPrice(getTotalCosts()) + "\n\n");
+        bill.append("Total: ");
+        bill.append(StringUtils.formatPrice(getTotalCosts()));
+        bill.append("\n\n");
 
-        bill.append(endMessage + "\n");
+        bill.append(endMessage);
+        bill.append("\n");
 
         return bill.toString();
     }
