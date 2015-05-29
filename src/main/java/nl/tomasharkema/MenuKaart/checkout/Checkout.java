@@ -130,8 +130,8 @@ public class Checkout {
     public static final class Builder {
         private List<Product> addProducts = new ArrayList<>();
 
-        public String beginMessage = "";
-        public String endMessage = "";
+        private String beginMessage = "";
+        private String endMessage = "";
 
         /**
          * Add a product to the products array
@@ -153,6 +153,22 @@ public class Checkout {
                 addProduct(p);
             }
             return this;
+        }
+
+        /**
+         * Set the endMessage that will be printed tailing the bill
+         * @param endMessage
+         */
+        public void setEndMessage(String endMessage) {
+            this.endMessage = endMessage;
+        }
+
+        /**
+         * Set the beginMessage that will be printed on top of the bill
+         * @param beginMessage
+         */
+        public void setBeginMessage(String beginMessage) {
+            this.beginMessage = beginMessage;
         }
 
         /**

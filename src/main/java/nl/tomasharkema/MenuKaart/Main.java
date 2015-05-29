@@ -17,8 +17,8 @@ class Main {
             .addProduct(new Cola(0.2))
             .addProduct(new Pizza(400));
 
-        bill.beginMessage = "Welkom bij 'Restaurant 't Boontje'";
-        bill.endMessage = "Tot ziens!";
+        bill.setBeginMessage("Welkom bij 'Restaurant 't Boontje'");
+        bill.setEndMessage("Tot ziens!");
 
         Checkout checkout = bill.build();
 
