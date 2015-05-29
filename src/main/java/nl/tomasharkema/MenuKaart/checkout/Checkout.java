@@ -1,19 +1,19 @@
 package nl.tomasharkema.menukaart.checkout;
 
-import nl.tomasharkema.menukaart.MenuKaart;
 import nl.tomasharkema.menukaart.product.Printable;
 import nl.tomasharkema.menukaart.product.Product;
 import nl.tomasharkema.menukaart.utils.StringUtils;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 /**
  * Created by tomas on 28-05-15.
  */
-public class Checkout {
+public class Checkout implements Serializable {
 
     private final Product[] listOfProducts;
     private final String beginMessage;
@@ -80,13 +80,9 @@ public class Checkout {
      * @throws IOException
      */
     public void writeBillToFile(String filename) throws IOException {
-        final File file = new File(filename);
-        final OutputStream outputStream = new FileOutputStream(file);
-
-        final byte[] bytes = getBillString().getBytes(MenuKaart.CHARSET);
-
-        outputStream.write(bytes);
-        outputStream.close();
+        ObjectOutputStream stream = new ObjectOutputStream(new FileOutputStream(filename));
+        stream.writeObject(this);
+        stream.close();
     }
 
     /**
@@ -95,19 +91,9 @@ public class Checkout {
      * @return String of the bill from the file.
      * @throws IOException
      */
-    public String readBillFromFile(String filename) throws IOException {
-        final File file = new File(filename);
-        final InputStreamReader inputStream = new InputStreamReader(new FileInputStream(file), MenuKaart.CHARSET);
-
-        StringBuilder builder = new StringBuilder();
-        int ch;
-        while((ch = inputStream.read()) != -1){
-            builder.append((char)ch);
-        }
-
-        inputStream.close();
-
-        return builder.toString();
+    public Checkout readBillFromFile(String filename) throws Exception {
+        ObjectInputStream stream = new ObjectInputStream(new FileInputStream(filename));
+        return (Checkout)stream.readObject();
     }
 
     /**
@@ -122,6 +108,15 @@ public class Checkout {
         builder.addProducts(listOfProducts);
 
         return builder;
+    }
+
+    @Override
+    public String toString() {
+        return "Checkout{" +
+                "listOfProducts=" + Arrays.toString(listOfProducts) +
+                ", beginMessage='" + beginMessage + '\'' +
+                ", endMessage='" + endMessage + '\'' +
+                '}';
     }
 
     /**

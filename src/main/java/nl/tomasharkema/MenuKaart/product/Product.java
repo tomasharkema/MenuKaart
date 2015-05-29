@@ -4,10 +4,12 @@ package nl.tomasharkema.menukaart.product;
 import nl.tomasharkema.menukaart.units.Unit;
 import nl.tomasharkema.menukaart.utils.StringUtils;
 
+import java.io.Serializable;
+
 /**
  * Created by tomas on 28-05-15.
  */
-public abstract class Product implements Printable {
+public abstract class Product implements Printable, Serializable {
 
     /**
      * The name of the product
@@ -69,5 +71,16 @@ public abstract class Product implements Printable {
     @Override
     public String print() {
         return name + " (" + units + " " + unit.abbriviation + ") " + StringUtils.formatPrice(getCosts());
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", cost=" + cost +
+                ", unit=" + unit +
+                ", units=" + units +
+                ", calorie=" + calorie +
+                '}';
     }
 }

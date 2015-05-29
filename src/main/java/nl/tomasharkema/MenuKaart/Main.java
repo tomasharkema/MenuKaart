@@ -47,9 +47,9 @@ class Main {
 
         System.out.println("Read bill from file");
         try {
-            String billString = checkout.readBillFromFile("bill.txt");
-            System.out.println("Got a bill for ya!\n\n" + billString);
-        } catch (IOException ex) {
+            Checkout checkoutFromFile = checkout.readBillFromFile("bill.txt");
+            System.out.println("Got a bill for ya!\n\n" + checkoutFromFile.getBillString());
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }

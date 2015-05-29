@@ -52,8 +52,8 @@ public class CheckoutTest {
             .addProduct(new Spaghetti(300))
             .addProduct(new Pizza(400));
 
-        bill.beginMessage = "Welkom bij 'Restaurant 't Boontje'";
-        bill.endMessage = "Tot ziens!";
+        bill.setBeginMessage("Welkom bij 'Restaurant 't Boontje'");
+        bill.setEndMessage("Tot ziens!");
 
        return bill.build();
     }
@@ -71,7 +71,7 @@ public class CheckoutTest {
 
         checkout.writeBillToFile(testFileName);
 
-        assertThat("File is written correctly", checkout.readBillFromFile(testFileName), standardMatcher());
+        assertThat("File is written correctly", checkout.readBillFromFile(testFileName).getBillString(), standardMatcher());
     }
 
     @Test
