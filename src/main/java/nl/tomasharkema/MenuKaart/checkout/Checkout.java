@@ -1,8 +1,9 @@
-package nl.tomasharkema.MenuKaart.checkout;
+package nl.tomasharkema.menukaart.checkout;
 
-import nl.tomasharkema.MenuKaart.product.Printable;
-import nl.tomasharkema.MenuKaart.product.Product;
-import nl.tomasharkema.MenuKaart.utils.StringUtils;
+import nl.tomasharkema.menukaart.MenuKaart;
+import nl.tomasharkema.menukaart.product.Printable;
+import nl.tomasharkema.menukaart.product.Product;
+import nl.tomasharkema.menukaart.utils.StringUtils;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -82,7 +83,7 @@ public class Checkout {
         final File file = new File(filename);
         final OutputStream outputStream = new FileOutputStream(file);
 
-        final byte[] bytes = getBillString().getBytes("UTF-8");
+        final byte[] bytes = getBillString().getBytes(MenuKaart.CHARSET);
 
         outputStream.write(bytes);
         outputStream.close();
@@ -96,13 +97,15 @@ public class Checkout {
      */
     public String readBillFromFile(String filename) throws IOException {
         final File file = new File(filename);
-        final InputStreamReader inputStream = new InputStreamReader(new FileInputStream(file), "UTF-8");
+        final InputStreamReader inputStream = new InputStreamReader(new FileInputStream(file), MenuKaart.CHARSET);
 
         StringBuilder builder = new StringBuilder();
         int ch;
         while((ch = inputStream.read()) != -1){
             builder.append((char)ch);
         }
+
+        inputStream.close();
 
         return builder.toString();
     }

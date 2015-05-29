@@ -1,4 +1,4 @@
-package nl.tomasharkema.MenuKaart;
+package nl.tomasharkema.menukaart;
 
 import java.util.Locale;
 
@@ -10,6 +10,11 @@ public class MenuKaart {
     /**
      * Set the used locale for the global application
      */
-    public final static Locale standardLocale = new Locale("nl", "NL");
+    public static final Locale STANDARD_LOCALE = new Locale("nl", "NL");
+
+    /**
+     * Set the correct charset used in this application
+     */
+    public static final String CHARSET = "UTF-8";
 
 }

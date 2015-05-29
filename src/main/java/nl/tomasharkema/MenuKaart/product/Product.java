@@ -1,8 +1,8 @@
-package nl.tomasharkema.MenuKaart.product;
+package nl.tomasharkema.menukaart.product;
 
 
-import nl.tomasharkema.MenuKaart.units.Unit;
-import nl.tomasharkema.MenuKaart.utils.StringUtils;
+import nl.tomasharkema.menukaart.units.Unit;
+import nl.tomasharkema.menukaart.utils.StringUtils;
 
 /**
  * Created by tomas on 28-05-15.

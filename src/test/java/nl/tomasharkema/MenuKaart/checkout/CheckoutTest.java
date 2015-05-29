@@ -1,9 +1,9 @@
-package nl.tomasharkema.MenuKaart.checkout;
+package nl.tomasharkema.menukaart.checkout;
 
-import nl.tomasharkema.MenuKaart.product.products.drinks.Cola;
-import nl.tomasharkema.MenuKaart.product.products.drinks.Fanta;
-import nl.tomasharkema.MenuKaart.product.products.food.Pizza;
-import nl.tomasharkema.MenuKaart.product.products.food.Spaghetti;
+import nl.tomasharkema.menukaart.product.products.drinks.Cola;
+import nl.tomasharkema.menukaart.product.products.drinks.Fanta;
+import nl.tomasharkema.menukaart.product.products.food.Pizza;
+import nl.tomasharkema.menukaart.product.products.food.Spaghetti;
 import org.hamcrest.Matcher;
 import org.junit.After;
 import org.junit.Test;

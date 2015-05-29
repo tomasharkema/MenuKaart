@@ -32,3 +32,4 @@ proguard/
 build/
 
 bill.txt
+/.nb-gradle/

@@ -1,11 +1,13 @@
-package nl.tomasharkema.MenuKaart.units;
+package nl.tomasharkema.menukaart.units;
 
 /**
  * Created by tomas on 28-05-15.
  */
-public abstract class Unit {
+public enum Unit {
+    Liters("Liter", "L"),
+    Grams("Gram", "g");
 
-    private final String name;
+    public final String name;
     public final String abbriviation;
 
     Unit(String name, String abbriviation) {

@@ -1,6 +1,6 @@
-package nl.tomasharkema.MenuKaart.product.products.drinks;
+package nl.tomasharkema.menukaart.product.products.drinks;
 
-import nl.tomasharkema.MenuKaart.product.products.Drink;
+import nl.tomasharkema.menukaart.product.products.Drink;
 
 /**
  * Created by tomas on 28-05-15.

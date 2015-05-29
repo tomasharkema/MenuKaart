@@ -1,4 +1,4 @@
-package nl.tomasharkema.MenuKaart.product.products.food;
+package nl.tomasharkema.menukaart.product.products.food;
 
 /**
  * Created by tomas on 28-05-15.

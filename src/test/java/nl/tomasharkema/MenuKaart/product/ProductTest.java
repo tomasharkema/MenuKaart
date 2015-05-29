@@ -1,6 +1,6 @@
-package nl.tomasharkema.MenuKaart.product;
+package nl.tomasharkema.menukaart.product;
 
-import nl.tomasharkema.MenuKaart.product.products.drinks.Cola;
+import nl.tomasharkema.menukaart.product.products.drinks.Cola;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

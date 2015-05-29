@@ -1,6 +1,6 @@
-package nl.tomasharkema.MenuKaart.utils;
+package nl.tomasharkema.menukaart.utils;
 
-import nl.tomasharkema.MenuKaart.MenuKaart;
+import nl.tomasharkema.menukaart.MenuKaart;
 
 import java.text.NumberFormat;
 
@@ -15,7 +15,7 @@ public class StringUtils {
      * @return      the more human readable string.
      */
     public static String formatPrice(double price) {
-        return NumberFormat.getCurrencyInstance(MenuKaart.standardLocale).format(price);
+        return NumberFormat.getCurrencyInstance(MenuKaart.STANDARD_LOCALE).format(price);
     }
 
     /**
